@@ -1,0 +1,14 @@
+./darknet detector test cfg/obj.data cfg/yolo-obj.cfg yolo-obj-final.weights -ext_output images/forklift705.jpg 
+
+
+./darknet detector test cfg/obj.data cfg/yolo-obj.cfg yolo-obj-final.weights -ext_output < images/images.txt
+
+
+./darknet detector test cfg/obj.data cfg/yolo-obj.cfg yolo-obj-final.weights -ext_output -out result.json images/forklift2449.jpg
+
+./darknet detector demo cfg/obj.data cfg/yolo-obj.cfg yolo-obj-final.weights -dont_show Despacho.mp4 -i 0 -out_filename results.avi
+
+
+./darknet detector demo cfg/coco.data cfg/yolov4.cfg yolov4.weights -c 0
+
+./darknet detector demo cfg/obj.data cfg/yolo-obj.cfg yolo-obj-final.weights -ext_output Despacho.mp4
